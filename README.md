@@ -6,6 +6,7 @@ This is the source code to my online website. It will contain any blogpost that 
 
 Main functionality
 
+- [x] - Deploy to Pages
 - [x] - Display blogposts on the main page
   - [x] - Filter blogposts based on Dev.to tags
     - [x] - Add/removing tags when clicking
@@ -14,8 +15,12 @@ Main functionality
 - [x] - Download resume button
 - [x] - Schedule a meeting with me (redirect to calendly)
 - [ ] - Cases navigation as Dropdown on the Navbar
+  - [ ] - Refactor of automated billing
+    - [x] - Introduction
+    - [ ] - Complete case
   - [ ] - Document upload case
-  - [ ] - Microfrontend framework case
+    - [x] - Introduction
+    - [ ] - Complete case
 - [ ] - Add Dark mode
 - [ ] - Add the rest of Ravena's pictures
 
