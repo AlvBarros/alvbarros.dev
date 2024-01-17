@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Case from "types/Case";
 import { PrimaryButton } from "../common/PrimaryButton";
 
+import Image from "next/image";
+
 type CaseIntroductionProps = {
   data: Case;
   imageOnLeft: boolean;
@@ -24,7 +26,7 @@ export const CaseIntroduction = ({
     >
       <div className="hidden sm:flex flex-col p-2 justify-between">
         <motion.div whileTap={{ scale: 0.95 }}>
-          <img
+          <Image
             className="mt-auto rounded-lg aspect-square object-scale-down cursor-pointer"
             src={data.coverImage}
             alt="Black and white image of my cat, Ravena, with her eyes made Teal color to match the website"

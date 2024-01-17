@@ -60,7 +60,7 @@ export const ArticlesList = () => {
   return (
     <>
       <div className="w-full p-4 text-center text-md italic text-slate-400">
-        some blogposts that I've written:
+        {"some blogposts that I've written:"}
       </div>
       <div key={"articles-list-" + filters.join("-")}>
         <Filter

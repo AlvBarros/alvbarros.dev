@@ -1,8 +1,8 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { PrimaryButton } from "common/PrimaryButton";
 import { SecondaryButton } from "common/SecondaryButton";
-
 const availablePhotos = 3;
 
 const scheduleCall = () => {
@@ -59,13 +59,14 @@ export const Introduction = () => {
         </span>
         <div className="flex flex-col xl:gap-4 gap-1">
           <span>
-            I'm a <strong className="text-teal-400">software developer</strong>{" "}
-            with 7+ years of experience in engineering, development and delivery
-            of results. My main experience comes from working in banks and
+            I{"'"}m a{" "}
+            <strong className="text-teal-400">software developer</strong> with
+            7+ years of experience in engineering, development and delivery of
+            results. My main experience comes from working in banks and
             providing consultancy for software companies.
           </span>
           <span className="md:block hidden">
-            Since the beggining, I've worked with a lot of different
+            Since the beggining, I{"'"}ve worked with a lot of different
             technologies. My main strengths are JavaScript, be it for Frontend
             with
             <strong className="text-teal-400"> React </strong> and
@@ -76,14 +77,15 @@ export const Introduction = () => {
           </span>
           <span className="lg:block hidden">
             Feel free to navigate through this website to learn more about what
-            I'm up to these days. And if you're interested, you can go through{" "}
+            I{"'"}m up to these days. And if you{"'"}re interested, you can go
+            through{" "}
             <a
               className="underline decoration-teal-400 text-teal-400 cursor-pointer"
               href="/cases"
             >
               specific cases
             </a>{" "}
-            in my career that I've felt that are worthy talking about.
+            in my career that I{"'"}ve felt that are worthy talking about.
           </span>
         </div>
         <span className="flex gap-2 flex-wrap">
@@ -101,7 +103,7 @@ export const Introduction = () => {
       >
         {number >= 1 && (
           <motion.div whileTap={{ scale: 0.95 }}>
-            <img
+            <Image
               className="mt-auto rounded-lg aspect-square object-scale-down cursor-pointer"
               src={`imgs/ravena-${number}.png`}
               alt="Black and white image of my cat, Ravena, with her eyes made Teal color to match the website"
