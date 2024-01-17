@@ -1,4 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Welcome to AlvBarros.dev
+
+This is the source code to my online website. It will contain any blogpost that I write over on [Dev.to](https://dev.to/alvbarros), some special cases that I've worked on during my time as a software developer, and any other additional stuff that I'd like to attach my name to.
+
+## To do
+
+Main functionality
+
+- [x] - Display blogposts on the main page
+  - [x] - Filter blogposts based on Dev.to tags
+    - [x] - Add/removing tags when clicking
+    - [x] - Go to dev.to when clicking the post
+  - [x] - Search for based on input
+- [x] - Download resume button
+- [x] - Schedule a meeting with me (redirect to calendly)
+- [ ] - Cases navigation as Dropdown on the Navbar
+  - [ ] - Document upload case
+  - [ ] - Microfrontend framework case
+- [ ] - Add Dark mode
+- [ ] - Add the rest of Ravena's pictures
+
+In the future
+
+- [ ] - Add Tailwind configuration for colors, paddings, etc
+- [ ] - Add analytics to see amount of visits
+- [ ] - Subscribe to be notified of any new posts/cases
+- [ ] - ???
 
 ## Getting Started
 
