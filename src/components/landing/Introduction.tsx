@@ -59,8 +59,8 @@ export const Introduction = () => {
         </span>
         <div className="flex flex-col xl:gap-4 gap-1">
           <span>
-            I{"'"}m a{" "}
-            <strong className="text-teal-400">software developer</strong> with
+            I{"'"}m a
+            <strong className="text-teal-400">{" "}software developer</strong> with
             7+ years of experience in engineering, development and delivery of
             results. My main experience comes from working in banks and
             providing consultancy for software companies.
@@ -72,20 +72,13 @@ export const Introduction = () => {
             <strong className="text-teal-400"> React </strong> and
             <strong className="text-teal-400"> Angular </strong> or Backend with
             <strong className="text-teal-400"> Node.js</strong>. However, my
-            experience also includes Mobile development, specifically{" "}
-            <strong className="text-teal-400">Flutter</strong>.
+            experience also includes Mobile development, specifically
+            <strong className="text-teal-400">{" "}Flutter</strong>.
           </span>
           <span className="lg:block hidden">
             Feel free to navigate through this website to learn more about what
             I{"'"}m up to these days. And if you{"'"}re interested, you can go
-            through{" "}
-            <a
-              className="underline decoration-teal-400 text-teal-400 cursor-pointer"
-              href="/cases"
-            >
-              specific cases
-            </a>{" "}
-            in my career that I{"'"}ve felt that are worthy talking about.
+            through specific cases in my career that I{"'"}ve felt that are worthy talking about.
           </span>
         </div>
         <span className="flex gap-2 flex-wrap">
