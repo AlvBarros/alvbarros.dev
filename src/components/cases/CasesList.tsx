@@ -12,7 +12,7 @@ export const CasesList = () => {
       <div className="w-max-full flex flex-wrap flex-col gap-8 justify-between">
         {cases.map((item, index) => (
           <CaseIntroduction
-            imageOnLeft={index % 2 == 0}
+            isMirrored={index % 2 == 0}
             key={item.title}
             data={item}
           />

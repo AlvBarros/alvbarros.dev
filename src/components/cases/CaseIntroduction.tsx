@@ -8,19 +8,19 @@ import Image from "next/image";
 
 type CaseIntroductionProps = {
   data: Case;
-  imageOnLeft: boolean;
+  isMirrored: boolean;
 };
 
 export const CaseIntroduction = ({
   data,
-  imageOnLeft,
+  isMirrored,
 }: CaseIntroductionProps) => {
   const navigateToCase = () => window.open("/cases/" + data.page);
 
   return (
     <article
       className={[
-        imageOnLeft ? "" : "flex-row-reverse",
+        isMirrored ? "" : "flex-row-reverse",
         "p-4 w-full flex border border-slate-100 rounded-lg shadow-xl max-h-fit",
       ].join(" ")}
     >
@@ -43,7 +43,7 @@ export const CaseIntroduction = ({
         {data.introduction.map((p, i) => (
           <span key={i}>{p}</span>
         ))}
-        <div className={(imageOnLeft ? "text-right" : "text-left") + " mt-1"}>
+        <div className={(isMirrored ? "text-right" : "text-left") + " mt-1"}>
           <PrimaryButton onClick={navigateToCase}>Read more</PrimaryButton>
         </div>
       </div>
