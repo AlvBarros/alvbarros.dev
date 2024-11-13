@@ -8,6 +8,8 @@ type BlogPost = {
   author: string;
   readingTimeMinutes: number;
   postUrl: string;
+  positiveReactionsCount: number;
+  commentsCount: number;
 };
 
 export default BlogPost;

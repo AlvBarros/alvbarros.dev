@@ -11,17 +11,19 @@ const getArticles = async (username: string): Promise<BlogPost[]> => {
   return fetch(url).then(async (result) => {
     const articles = await result.json();
     return articles.map(
-      (a: any) =>
+      (article: any) =>
         ({
-          id: a["id"],
-          title: a["title"],
-          description: a["description"],
-          publishDate: parseISO(a["published_at"]),
-          coverImage: a["scover_image"],
-          tags: a["tag_list"].sort(),
-          readingTimeMinutes: a["reading_time_minutes"],
-          postUrl: a["canonical_url"],
+          id: article["id"],
           author: username,
+          title: article["title"],
+          description: article["description"],
+          publishDate: parseISO(article["published_at"]),
+          coverImage: article["scover_image"],
+          tags: article["tag_list"].sort(),
+          readingTimeMinutes: article["reading_time_minutes"],
+          postUrl: article["canonical_url"],
+          positiveReactionsCount: article["positive_reactions_count"],
+          commentsCount: article["comments_count"],
         } as BlogPost)
     );
   });
