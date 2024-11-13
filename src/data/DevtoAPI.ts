@@ -18,7 +18,7 @@ const getArticles = async (username: string): Promise<BlogPost[]> => {
           title: article["title"],
           description: article["description"],
           publishDate: parseISO(article["published_at"]),
-          coverImage: article["scover_image"],
+          coverImage: article["cover_image"],
           tags: article["tag_list"].sort(),
           readingTimeMinutes: article["reading_time_minutes"],
           postUrl: article["canonical_url"],
