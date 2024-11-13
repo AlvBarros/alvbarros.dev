@@ -60,7 +60,7 @@ export const Introduction = () => {
         <div className="flex flex-col xl:gap-4 gap-1">
           <span>
             I{"'"}m a
-            <strong className="text-teal-400">{" "}software developer</strong> with
+            <strong className="text-teal-400"> software developer</strong> with
             7+ years of experience in engineering, development and delivery of
             results. My main experience comes from working in banks and
             providing consultancy for software companies.
@@ -73,12 +73,13 @@ export const Introduction = () => {
             <strong className="text-teal-400"> Angular </strong> or Backend with
             <strong className="text-teal-400"> Node.js</strong>. However, my
             experience also includes Mobile development, specifically
-            <strong className="text-teal-400">{" "}Flutter</strong>.
+            <strong className="text-teal-400"> Flutter</strong>.
           </span>
           <span className="lg:block hidden">
             Feel free to navigate through this website to learn more about what
             I{"'"}m up to these days. And if you{"'"}re interested, you can go
-            through specific cases in my career that I{"'"}ve felt that are worthy talking about.
+            through specific cases in my career that I{"'"}ve felt that are
+            worthy talking about.
           </span>
         </div>
         <span className="flex gap-2 flex-wrap">
@@ -100,6 +101,8 @@ export const Introduction = () => {
               className="mt-auto rounded-lg aspect-square object-scale-down cursor-pointer"
               src={`imgs/ravena-${number}.png`}
               alt="Black and white image of my cat, Ravena, with her eyes made Teal color to match the website"
+              width={1000}
+              height={1000}
             />
             <span className="w-fit mb-auto ml-auto text-sm italic text-slate-400">
               * And this is Ravena
