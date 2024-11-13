@@ -8,7 +8,7 @@ const articlesUrl = (username: string): string => {
 
 const getArticles = async (username: string): Promise<BlogPost[]> => {
   const url = [apiUrl, articlesUrl(username)].join("");
-  return fetch(url).then(async (result) => {
+  return fetch(url, { cache: "no-cache" }).then(async (result) => {
     const articles = await result.json();
     return articles.map(
       (article: any) =>
