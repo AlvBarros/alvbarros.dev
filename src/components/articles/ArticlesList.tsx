@@ -8,7 +8,7 @@ import { Filter } from "common/Filter";
 
 import { getArticles } from "data/DevtoAPI";
 
-const amountOfPosts = 2;
+const amountOfPosts = 3;
 
 export const ArticlesList = () => {
   const [articles, setArticles] = useState([] as BlogPost[]);
