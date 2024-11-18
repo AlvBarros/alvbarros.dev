@@ -7,7 +7,7 @@ const availablePhotos = 3;
 
 const scheduleCall = () => {
   const link = document.createElement("a");
-  link.href = "https://calendly.com/alv-barrosc/30-minute-meeting-clone";
+  link.href = "https://calendly.com/alv-barrosc/30-minutes-meeting";
   link.setAttribute("download", "Alvaro_Barros.pdf");
   document.body.appendChild(link);
   link.click();
