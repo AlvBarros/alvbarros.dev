@@ -45,7 +45,6 @@ export const ArticlesList = () => {
   };
 
   const filteredArticles = articles
-    .slice(0, showMore ? articles.length : amountOfPosts)
     .filter((article) => {
       return (
         (filters.length === 0 ||
@@ -53,7 +52,8 @@ export const ArticlesList = () => {
         (!query ||
           article.title.toLowerCase().includes(query.toLowerCase().trim()))
       );
-    });
+    })
+    .slice(0, showMore ? articles.length : amountOfPosts);
 
   console.log("filteredArticlesLength: ", filteredArticles.length);
 
