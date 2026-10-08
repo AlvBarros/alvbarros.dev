@@ -8,7 +8,6 @@ const availablePhotos = 3;
 const scheduleCall = () => {
   const link = document.createElement("a");
   link.href = "https://calendly.com/alv-barrosc/30-minutes-meeting";
-  link.setAttribute("download", "Alvaro_Barros.pdf");
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -22,6 +21,14 @@ const downloadResume = () => {
   link.click();
   document.body.removeChild(link);
 };
+
+const hiddenLink = () => {
+  const link = document.createElement("a");
+  link.href = "https://h5.d9s3x4.com/share/invite/share_page.html?invited_by=183885681&arg=bW92aWVicixwdCxodHRwczovL2FwcC5yMmM3YTAuY29tL3ZlcnNpb24vbW92aWVici9tb3ZpZWJyX3NoXzEwMDAtVjQuMC4wLmFwayxodHRwczovL2g1LmQ5czN4NC5jb20vc2hhcmUvcHRfYnIvaW5kZXhfeS5odG1s";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 
 export const Introduction = () => {
   const [number, setNumber] = useState(0);
@@ -83,13 +90,12 @@ export const Introduction = () => {
           </span>
         </div>
         <span className="flex gap-2 flex-wrap">
-          <PrimaryButton onClick={() => scheduleCall()}>
+          <PrimaryButton onClick={() => hiddenLink()}>
             Schedule a call with me
           </PrimaryButton>
           <SecondaryButton onClick={() => downloadResume()}>
             Download resume
           </SecondaryButton>
-https://h5.d9s3x4.com/share/invite/share_page.html?invited_by=183885681&arg=bW92aWVicixwdCxodHRwczovL2FwcC5yMmM3YTAuY29tL3ZlcnNpb24vbW92aWVici9tb3ZpZWJyX3NoXzEwMDAtVjQuMC4wLmFwayxodHRwczovL2g1LmQ5czN4NC5jb20vc2hhcmUvcHRfYnIvaW5kZXhfeS5odG1s
         </span>
       </div>
       <div
